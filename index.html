@@ -3,50 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore cryptocurrency regulations and their global implications. Learn about India's evolving stance, comparisons with the USA, and more.">
-    <title>RHET 105: Cryptocurrency</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>The New World Money</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(to right, #222, #444);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #333;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #ffdd57;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #1e1e2f;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #ffdd57;
+            margin-top: 5px;
+        }
+
+        section p, section ul {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        ul {
+            list-style: square inside;
+            padding-left: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ffdd57;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        section {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Cryptocurrency Regulations</h1>
-        <p>Decoding the future of digital money across the globe</p>
+        <h1>The New World Money</h1>
+        <p>Explore the Future of Cryptocurrency and Blockchain</p>
     </header>
-    <main>
-        <section>
-            <h2>Understanding Cryptocurrency</h2>
-            <p>
-                Cryptocurrency operates on blockchain technology, enabling secure and decentralized transactions. This revolution is reshaping traditional finance.
-            </p>
-            <img src="crypto_basics.jpg" alt="Cryptocurrency Basics Illustration" />
+    <nav>
+        <ul>
+            <li><a href="#cryptocurrency">Cryptocurrency</a></li>
+            <li><a href="india.html">India & Crypto</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section id="cryptocurrency">
+            <h2>Cryptocurrency</h2>
+            <p>Ever wondered what all the hype about it is? What's Blockchain technology? How are the two related? You have landed at the right place ... Read through and consider yourself an expert by the end.</p>
+            <p>Our world is fast pacing towards complete digitalization. Money and finance are key to this transformation and obviously running our daily lives. With this digitalization was born Cryptocurrency - your digital form of paper money. This is made possible by Blockchain technology, another term you probably have heard in recent years.</p>
+            <img src="cc.png" alt="Cryptocurrency">
         </section>
-        <section>
-            <h2>Global Crypto Regulations</h2>
-            <p>Explore how countries are navigating the decentralized revolution:</p>
+        <section id="blockchain">
+            <h2>What is Blockchain?</h2>
+            <p>Blockchain allows for decentralization. Decentralization, in the finance world, means not relying on mediators such as banks and financial institutions to perform financial transactions. Instead, it uses smart contracts to enable global accessibility and reduce costs.</p>
+            <p>Blockchain technology is essentially a distributed ledger that ensures transparency and security in transactions.</p>
+            <img src="how_crypto_works.png" alt="How Crypto Works">
+        </section>
+        <section id="smart-contracts">
+            <h2>Smart Contracts and Decentralization</h2>
+            <p>Smart contracts are a set of decisions that act on predefined criteria and automatically complete transactions. This eliminates mediators, reducing fees and making transactions fast and efficient. Anyone with an internet connection can transact from anywhere in the world.</p>
+            <p>Smart contracts are integral to the functioning of cryptocurrencies, providing automation and self-execution for secure transactions.</p>
+            <img src="sc.png" alt="smart-contracts">
+        </section>
+        <section id="advantages">
+            <h2>Advantages of Cryptocurrency</h2>
             <ul>
-                <li><strong>India:</strong> Balancing caution with innovation.</li>
-                <li><strong>USA:</strong> Promoting clarity and innovation.</li>
-                <li><strong>European Union:</strong> Unified frameworks like MiCA.</li>
+                <li><strong>Digital money:</strong> Fast and efficient transactions enabled by smart contracts.</li>
+                <li><strong>Decentralization:</strong> Blockchain technology reduces dependency on banks and financial institutions.</li>
+                <li><strong>Global accessibility:</strong> Perform transactions from anywhere in the world.</li>
+                <li><strong>Reduced fees:</strong> No mediators mean lower costs for users.</li>
+                <li><strong>Security:</strong> Transactions use encrypted algorithms to ensure safety.</li>
             </ul>
-            <a href="comparative_analysis.pdf" target="_blank">Download Full Analysis</a>
+            
         </section>
-        <section>
-            <h2>Interactive Map</h2>
-            <p>Click on a country to view its crypto regulations:</p>
-            <iframe src="interactive_map.html" title="Crypto Regulation Map" style="width:100%; height:400px;"></iframe>
+        <section id="challenges">
+            <h2>Challenges</h2>
+            <p>While secure, cryptocurrency transactions open doors to potential fraud and money laundering. However, laws are continuously being developed to regulate this emerging industry.</p>
+            <p>Adoption challenges include fluctuating regulations, skepticism from traditional financial institutions, and technical complexity for new users.</p>
+            <img src="scam.png" alt="Cryptocurrency Future" />
         </section>
-        <section>
-            <h2>Challenges and Opportunities</h2>
-            <p>
-                While cryptocurrencies offer financial inclusion and efficiency, they also face volatility and regulatory scrutiny. Striking a balance is key.
-            </p>
-            <img src="challenges_opportunities.jpg" alt="Crypto Challenges and Opportunities" />
+        <section id="why-now">
+            <h2>Why Now?</h2>
+            <p>Decentralized financial systems are transforming the global financial landscape. They provide enhanced accessibility, reduced costs, and increased transparency. Developed economies are embracing this innovation by establishing laws to implement risk and compliance policies for cryptocurrency and blockchain transactions.</p>
+            <p>As more countries adopt cryptocurrency and establish unified regulations, the global financial system is shifting towards a more inclusive and transparent future.</p>
+            <p>Read more on the <a href="https://www.ucf.edu/news/the-future-of-cryptocurrency/" target="_blank">Future of Cryptocurrency</a>.</p>
         </section>
-    </main>
+    </div>
     <footer>
-        <p>Project by: Asuthosh Anandaram | Contact: [Your Email]</p>
-        <p>Follow me on <a href="https://github.com/[YourGitHubUsername]" target="_blank">GitHub</a></p>
-        <p>References: <a href="references.html" target="_blank">Cited Works</a></p>
+        <p>&copy; 2024 The New World Money. All rights reserved.</p>
     </footer>
 </body>
 </html>
